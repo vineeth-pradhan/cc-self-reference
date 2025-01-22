@@ -13,6 +13,8 @@ int main()
   //
   for(int i = 0; i < namedConst.length(); i++) {
     std::cout << namedConst[i];
+    // Cannot modify the internals of a const. Compile err
+    // if(i == namedConst.length() - 1) { namedConst[i] = "*"; }
   }
   //
   std::cout << "\n";
