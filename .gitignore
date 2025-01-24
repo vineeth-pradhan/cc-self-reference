@@ -3,5 +3,6 @@
 !.gitignore
 !*.cc
 !*.h
+!*.c
 
 !*/
