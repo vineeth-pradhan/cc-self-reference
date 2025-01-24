@@ -9,4 +9,11 @@ int main()
     std::cout << digits[i] << ", ";
   }
   std::cout << digits[digitsLen - 1] << "\n";
+
+  std::vector name { 'v', 'i', 'n', 'e', 'e', 't', 'h'};
+  const int nameLen = name.size();
+  for(int i = 0; i < nameLen; i++) {
+    std::cout << nameLen[i];
+  }
+  std::cout << "\n";
 }
