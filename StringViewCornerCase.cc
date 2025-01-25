@@ -21,4 +21,13 @@ int main()
   // Prints ello Vineeth ('H' chopped) while str is modified to
   // an empty string!!!
   printString(sView);
+
+  std::string_view sView2 {};
+
+  {
+    std::string newString { "Good morning" };
+    sView2 = newString;
+  }
+
+  std::cout << sView2 << "\n";
 }
