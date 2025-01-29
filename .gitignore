@@ -4,5 +4,7 @@
 !*.cc
 !*.h
 !*.c
+!*CMakeLists.txt
+!*.json
 
 !*/
