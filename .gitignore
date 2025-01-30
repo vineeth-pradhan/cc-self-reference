@@ -3,6 +3,7 @@
 !.gitignore
 !*.cc
 !*.h
+!*.h.in
 !*.c
 !*CMakeLists.txt
 !*.json
