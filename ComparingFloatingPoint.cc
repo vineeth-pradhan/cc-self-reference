@@ -21,4 +21,9 @@ int main()
   {
     std::cout << "x > y\n";
   }
+
+  constexpr double a1{0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1};
+  std::cout << std::boolalpha;
+  // prints false
+  std::cout << (a1 == 0.9) << "\n";
 }
