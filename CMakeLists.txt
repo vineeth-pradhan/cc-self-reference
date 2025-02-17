@@ -1,15 +1,11 @@
 # make -C build
 # ./build/ExecutableFile
 
-cmake_minimum_required(VERSION 3.10)
-project(CPPWorkshop VERSION 1.0)
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_EXPORT_COMPILE_COMMANDS True)
-configure_file(headers/CPPWorkshopConfig.h.in headers/CPPWorkshopConfig.h)
-add_executable(MapExample MapExample.cc)
-add_executable(CharacterIntro CharacterIntro.cc)
-add_executable(CharArray CharArray.cc)
-add_executable(ConditionalCompilation ConditionalCompilation.cc)
-add_executable(DirectInitialization DirectInitialization.cc)
-target_include_directories(DirectInitialization PUBLIC "${PROJECT_BINARY_DIR}/headers")
+cmake_minimum_required(VERSION 3.15)
+project(CCReference VERSION 1.0)
+add_executable(CCReferenceIndex CCReferenceIndex.cc)
+
+add_library(compiler_flags INTERFACE)
+target_compile_features(compiler_flags INTERFACE cxx_std_23)
+target_link_libraries(CCReferenceIndex PUBLIC compiler_flags)
+target_include_directories(CCReferenceIndex PUBLIC "${PROJECT_BINARY_DIR}/headers")
