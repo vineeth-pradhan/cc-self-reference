@@ -1,4 +1,4 @@
-add_library(Ch1 SHARED HelloWorld.cc)
+add_library(Ch1 SHARED HelloWorld.cc SizeOfInt.cc)
 
 target_include_directories(Ch1 INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>

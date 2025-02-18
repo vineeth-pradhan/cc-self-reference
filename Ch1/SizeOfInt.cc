@@ -1,8 +1,11 @@
 #include <iostream>
 
-using namespace std;
+class SizeOfInt
+{
+  public:
 
-int main(){
-  std::cout << sizeof(int) << endl;
-  return 0;
-}
+    void execute()
+    {
+      std::cout << "Size of int is: " << sizeof(int) << "\n";
+    }
+};
