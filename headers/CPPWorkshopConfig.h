@@ -1,2 +1,0 @@
-#define CPPWorkshop_VERSION_MAJOR @CPPWorkshop_VERSION_MAJOR@
-#define CPPWorkshop_VERSION_MINOR @CPPWorkshop_VERSION_MINOR@

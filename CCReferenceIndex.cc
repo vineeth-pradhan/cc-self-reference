@@ -6,23 +6,36 @@
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
 #include "CommaOperator.cc"
+#include "ConditionalCompilation.cc"
+#include "DirectInitialization.cc"
 
 int main()
 {
-  std::cout << "Welcome\n";
   HelloWorld hw = HelloWorld();
   hw.execute();
+
   SizeOfInt si = SizeOfInt();
   si.execute();
+
   AddingHeaderFiles ahf = AddingHeaderFiles();
   ahf.execute();
+
   CallingHeader ch = CallingHeader();
   ch.execute();
+
   CharacterIntro ci = CharacterIntro();
   ci.execute();
+
   CharArray ca = CharArray();
   ca.execute();
+
   CommaOperator co = CommaOperator();
   co.execute();
+
+  ConditionalCompilation cc = ConditionalCompilation();
+  cc.execute();
+
+  DirectInitialization di = DirectInitialization();
+  di.execute();
   return 0;
 }

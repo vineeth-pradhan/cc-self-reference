@@ -35,12 +35,12 @@ void print_map2(std::map<std::string_view, std::string_view> &m)
 // ./main
 int main()
 {
-  std::map<std::string_view, std::string_view> person {{ "name", "Vineeth" }, { "age", "37" }};
+  std::map<std::string_view, std::string_view> person {{ "name", "Vineeth" }, { "age", "xx" }};
   // std::cout << person["name"] << "\n";
   // std::cout << person["age"] << "\n";
   // std::cout << person["age"].size() << "\n";
-  person.insert({"ph", "9008909779"});
-  person.insert({"address", "6163, Cedar block 6, SFV, BSK 6, BLRU - 109"});
+  person.insert({"ph", "900xxxxxxx"});
+  person.insert({"address", "xxxx, xxxxx block x, xx, BSK x, BLRU - xxx"});
   // std::cout << person["ph"] << "\n";
   print_map(person);
   // Prints out the occurance of name in the map

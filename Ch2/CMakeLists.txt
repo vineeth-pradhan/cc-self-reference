@@ -1,6 +1,7 @@
 add_library(Ch2 SHARED
   AddingHeaderFiles.cc AddingHeaderFiles_add.cc
   CallingHeader.cc Vineeth.h
+  ConditionalCompilation.cc
 )
 
 target_include_directories(Ch2 INTERFACE
