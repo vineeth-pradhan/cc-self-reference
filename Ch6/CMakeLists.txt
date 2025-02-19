@@ -1,6 +1,7 @@
 add_library(Ch6 SHARED
   CommaOperator.cc
   ComparingFloatingPoint.cc
+  Exponentiation.cc
 )
 
 target_include_directories(Ch6 INTERFACE

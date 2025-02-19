@@ -1,4 +1,3 @@
-#include <iostream>
 #include "HelloWorld.cc"
 #include "SizeOfInt.cc"
 #include "AddingHeaderFiles.cc"
@@ -8,6 +7,9 @@
 #include "CommaOperator.cc"
 #include "ConditionalCompilation.cc"
 #include "DirectInitialization.cc"
+#include "Exponentiation.cc"
+#include "FixedWidthIntegers.cc"
+#include "ForwardDeclaration.cc"
 
 int main()
 {
@@ -37,5 +39,15 @@ int main()
 
   DirectInitialization di = DirectInitialization();
   di.execute();
+
+  Exponentiation e = Exponentiation();
+  e.execute();
+
+  FixedWidthIntegers fwi = FixedWidthIntegers();
+  fwi.execute();
+
+  ForwardDeclaration fd = ForwardDeclaration();
+  fd.execute();
+
   return 0;
 }
