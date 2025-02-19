@@ -3,6 +3,8 @@ add_library(Ch2 SHARED
   CallingHeader.cc Vineeth.h
   ConditionalCompilation.cc
   ForwardDeclaration.cc
+  FunctionDefinition.cc
+  InfinityDemo.cc
 )
 
 target_include_directories(Ch2 INTERFACE

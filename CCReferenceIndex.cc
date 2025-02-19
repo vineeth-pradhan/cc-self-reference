@@ -10,6 +10,10 @@
 #include "Exponentiation.cc"
 #include "FixedWidthIntegers.cc"
 #include "ForwardDeclaration.cc"
+#include "FunctionDefinition.cc"
+#include "GetlineDemo.cc"
+#include "InfinityDemo.cc"
+#include "InputBooleanValues.cc"
 
 int main()
 {
@@ -48,6 +52,18 @@ int main()
 
   ForwardDeclaration fd = ForwardDeclaration();
   fd.execute();
+
+  FunctionDefinition fd2 = FunctionDefinition();
+  fd2.execute();
+
+  GetlineDemo gd = GetlineDemo();
+  gd.execute();
+
+  InfinityDemo id = InfinityDemo();
+  id.execute();
+
+  InputBooleanValues ibv = InputBooleanValues();
+  ibv.execute();
 
   return 0;
 }

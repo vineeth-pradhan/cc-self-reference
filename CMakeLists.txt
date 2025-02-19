@@ -4,6 +4,7 @@ project(CCReference VERSION 1.0)
 add_subdirectory(Ch1)
 add_subdirectory(Ch2)
 add_subdirectory(Ch4)
+add_subdirectory(Ch5)
 add_subdirectory(Ch6)
 
 set(BUILD_SHARED_LIBS ON)
@@ -17,6 +18,7 @@ target_link_libraries(CCReferenceIndex
   PRIVATE Ch1
   PRIVATE Ch2
   PRIVATE Ch4
+  PRIVATE Ch5
   PRIVATE Ch6
   PUBLIC compiler_flags
 )

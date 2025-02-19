@@ -2,6 +2,7 @@ add_library(Ch4 SHARED
   CharacterIntro.cc
   CharArray.cc
   FixedWidthIntegers.cc
+  InputBooleanValues.cc
 )
 
 target_include_directories(Ch4 INTERFACE
