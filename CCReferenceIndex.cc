@@ -3,6 +3,7 @@
 #include "SizeOfInt.cc"
 #include "AddingHeaderFiles.cc"
 #include "CallingHeader.cc"
+#include "CharacterIntro.cc"
 
 int main()
 {
@@ -15,5 +16,7 @@ int main()
   ahf.execute();
   CallingHeader ch = CallingHeader();
   ch.execute();
+  CharacterIntro ci = CharacterIntro();
+  ci.execute();
   return 0;
 }
