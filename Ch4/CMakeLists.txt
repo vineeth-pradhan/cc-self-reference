@@ -3,6 +3,8 @@ add_library(Ch4 SHARED
   CharArray.cc
   FixedWidthIntegers.cc
   InputBooleanValues.cc
+  SizeOfTypes.cc
+  SizeT.cc
 )
 
 target_include_directories(Ch4 INTERFACE

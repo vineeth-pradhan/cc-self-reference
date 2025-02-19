@@ -14,6 +14,19 @@
 #include "GetlineDemo.cc"
 #include "InfinityDemo.cc"
 #include "InputBooleanValues.cc"
+#include "ListInitialization.cc"
+#include "NamedConstants.cc"
+#include "NumeralSystem.cc"
+#include "ScopeOfDefines.cc"
+#include "SizeOfTypes.cc"
+#include "SizeT.cc"
+#include "StaticCasting.cc"
+#include "StringViewCornerCase.cc"
+#include "StringViewCornerCase2.cc"
+#include "StringViewCornerCase3.cc"
+#include "StringViewCornerCase4.cc"
+#include "StringViewExample.cc"
+#include "StringViewSubstr.cc"
 
 int main()
 {
@@ -64,6 +77,45 @@ int main()
 
   InputBooleanValues ibv = InputBooleanValues();
   ibv.execute();
+
+  ListInitialization li = ListInitialization();
+  li.execute();
+
+  NamedConstants nc = NamedConstants();
+  nc.execute();
+
+  NumeralSystem ns = NumeralSystem();
+  ns.execute();
+
+  ScopeOfDefines sod = ScopeOfDefines();
+  sod.execute();
+
+  SizeOfTypes sot = SizeOfTypes();
+  sot.execute();
+
+  SizeT st = SizeT();
+  st.execute();
+
+  StaticCasting sc = StaticCasting();
+  sc.execute();
+
+  StringViewCornerCase svcs = StringViewCornerCase();
+  svcs.execute();
+
+  StringViewCornerCase2 svcs2 = StringViewCornerCase2();
+  svcs2.execute();
+
+  StringViewCornerCase3 svcs3 = StringViewCornerCase3();
+  svcs3.execute();
+
+  StringViewCornerCase4 svcs4 = StringViewCornerCase4();
+  svcs4.execute();
+
+  StringViewExample sve = StringViewExample();
+  sve.execute();
+
+  StringViewSubstr svs = StringViewSubstr();
+  svs.execute();
 
   return 0;
 }
