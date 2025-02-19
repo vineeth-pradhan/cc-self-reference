@@ -4,6 +4,8 @@
 #include "AddingHeaderFiles.cc"
 #include "CallingHeader.cc"
 #include "CharacterIntro.cc"
+#include "CharArray.cc"
+#include "CommaOperator.cc"
 
 int main()
 {
@@ -18,5 +20,9 @@ int main()
   ch.execute();
   CharacterIntro ci = CharacterIntro();
   ci.execute();
+  CharArray ca = CharArray();
+  ca.execute();
+  CommaOperator co = CommaOperator();
+  co.execute();
   return 0;
 }
