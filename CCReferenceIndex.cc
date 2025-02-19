@@ -2,6 +2,7 @@
 #include "HelloWorld.cc"
 #include "SizeOfInt.cc"
 #include "AddingHeaderFiles.cc"
+#include "CallingHeader.cc"
 
 int main()
 {
@@ -12,5 +13,7 @@ int main()
   si.execute();
   AddingHeaderFiles ahf = AddingHeaderFiles();
   ahf.execute();
+  CallingHeader ch = CallingHeader();
+  ch.execute();
   return 0;
 }
