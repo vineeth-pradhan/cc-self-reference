@@ -2,11 +2,8 @@
 
 class StringViewCornerCase4
 {
-  std::string_view boolString(bool item)
+  std::string_view boolString(bool item, std::string &t, std::string &f)
   {
-    std::string t { "true" };
-    std::string f { "false" };
-
     if(item){ return t; }
     else{ return f; }
   }
@@ -24,7 +21,9 @@ class StringViewCornerCase4
   // returns t is true; and f is PVW�
   void execute()
   {
-    std::cout << "t is " << boolString(true) << "; and f is " << boolString(false) << "\n";
+    std::string t { "true" };
+    std::string f { "false" };
+    std::cout << "t is " << boolString(true, t, f) << "; and f is " << boolString(false, t, f) << "\n";
     // this is ok
     // std::cout << "t is " << boolString2(true) << "; and f is " << boolString2(false) << "\n";
   }

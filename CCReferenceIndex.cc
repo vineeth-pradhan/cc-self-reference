@@ -27,6 +27,7 @@
 #include "StringViewCornerCase4.cc"
 #include "StringViewExample.cc"
 #include "StringViewSubstr.cc"
+#include "VariableScope.cc"
 
 int main()
 {
@@ -116,6 +117,9 @@ int main()
 
   StringViewSubstr svs = StringViewSubstr();
   svs.execute();
+
+  VariableScope vs = VariableScope();
+  vs.execute();
 
   return 0;
 }

@@ -6,6 +6,7 @@ add_library(Ch2 SHARED
   FunctionDefinition.cc
   InfinityDemo.cc
   ScopeOfDefines.cc
+  VariableScope.cc
 )
 
 target_include_directories(Ch2 INTERFACE
