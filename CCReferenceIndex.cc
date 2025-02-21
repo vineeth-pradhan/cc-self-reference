@@ -5,6 +5,7 @@
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
 #include "CommaOperator.cc"
+#include "ComparingFloatingPoint.cc"
 #include "ConditionalCompilation.cc"
 #include "DirectInitialization.cc"
 #include "Exponentiation.cc"
@@ -29,8 +30,20 @@
 #include "StringViewSubstr.cc"
 #include "VariableScope.cc"
 
-int main()
+int main(int argc, char* argv[])
 {
+  std::string_view program;
+
+  if(argc > 1)
+    program = argv[1];
+
+  std::cout << program << "\n";
+  if(program == "ComparingFloatingPoint"){
+    ComparingFloatingPoint cfp = ComparingFloatingPoint();
+    cfp.execute();
+    return 0;
+  }
+
   HelloWorld hw = HelloWorld();
   hw.execute();
 

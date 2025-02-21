@@ -1,29 +1,21 @@
 #include <iostream>
+#include <iomanip>
 
-// g++ -std=c++23 -o main ComparingFloatingPoint.cc
-// prints x > y because of rounding errors
-int main()
+class ComparingFloatingPoint
 {
-  constexpr double x{ 100.00 - 99.99 };
-  constexpr double y{ 10.00 - 9.99 };
-  std::cout << x << "\n";
-  std::cout << y << "\n";
+  public:
 
-  if(x == y)
+  // g++ -std=c++23 -o main ComparingFloatingPoint.cc
+  // prints x > y because of rounding errors
+  void execute()
   {
-    std::cout << "x == y\n";
-  }
-  else if(x < y)
-  {
-    std::cout << "x < y\n";
-  }
-  else if(x > y)
-  {
-    std::cout << "x > y\n";
-  }
+    constexpr float a1 { 0.1f+0.1f+0.1f+0.1f+0.1f+0.1f+0.1f+0.1f+0.1f };
+    constexpr float expectedA1 = 0.9f;
+    // debug
+    std::cout << "Expected value of a1: "<< expectedA1 << "\n";
+    std::cout << "Actual value of a1: "<< std::fixed << std::setprecision(8) << a1 << "\n";
 
-  constexpr double a1{0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1};
-  std::cout << std::boolalpha;
-  // prints false
-  std::cout << (a1 == 0.9) << "\n";
-}
+    std::cout << std::boolalpha;
+    std::cout << "Are they equal?: " << (a1 == expectedA1) << "\n";
+  }
+};
