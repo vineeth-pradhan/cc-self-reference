@@ -12,6 +12,10 @@ class ComparingFloatingPoint
   // irb> (90000.89843750 - 90000.90625000).abs <= ([90000.89843750, 90000.90625000].max * 0.00001)
   bool relApproximation(float a, float b, float relEpsilon)
   {
+    // If close to 0, return true. Otherwise use relative weightage
+    if(absApproximation(a, b, relEpsilon))
+      return true;
+
     return std::abs(a-b) <= (std::max(std::abs(a),std::abs(b)) * relEpsilon);
   }
 
@@ -31,7 +35,7 @@ class ComparingFloatingPoint
     std::cout << "Straight forward method: Are they equal? " << (a1 == expectedA1) << "\n";
     std::cout << "Absolute approximation: Are they equal? " << absApproximation(a1, expectedA1, 0.00001f) << "\n";
     std::cout << "absolute approximation ----------------------------------------------------\n";
-    std::cout << "approximation factor: 0.00001f";
+    std::cout << "approximation factor: 0.00001f\n";
     std::cout << "10000.1\n";
 
     constexpr float veryBigA1 = { 10000.1f + 10000.1f + 10000.1f + 10000.1f + 10000.1f + 10000.1f + 10000.1f + 10000.1f + 10000.1f };
@@ -43,11 +47,19 @@ class ComparingFloatingPoint
     std::cout << "Absolute approximation: Are they equal? " << absApproximation(veryBigA1, expectedVeryBigA1, 0.00001f) << "\n";
 
     std::cout << "relative approximation ----------------------------------------------------\n";
-    std::cout << "approximation factor: 0.00001f";
+    std::cout << "approximation factor: 0.00001f\n";
     std::cout << "10000.1\n";
     std::cout << "Expected value of veryBigA1: "<< expectedVeryBigA1 << "\n";
     std::cout << "Actual value of veryBigA1: "<< std::fixed << std::setprecision(8) << veryBigA1 << "\n";
     std::cout << "Straight forward method: Are they equal? " << (veryBigA1 == expectedVeryBigA1) << "\n";
     std::cout << "Relative approximation: Are they equal? " << relApproximation(veryBigA1, expectedVeryBigA1, 0.00001f) << "\n";
+
+    std::cout << "relative approximation ----------------------------------------------------\n";
+    std::cout << "approximation factor: 0.00001f\n";
+    std::cout << "0.0\n";
+    std::cout << "Expected value: "<< 0.0 << "\n";
+    std::cout << "Actual value: "<< std::fixed << std::setprecision(8) << (a1-0.9f) << "\n";
+    std::cout << "Straight forward method: Are they equal? " << (a1 == 0.9f) << "\n";
+    std::cout << "Relative approximation: Are they equal? " << relApproximation((a1-0.9f), 0.0f, 0.00001f) << "\n";
   }
 };
