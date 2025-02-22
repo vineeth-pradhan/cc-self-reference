@@ -29,6 +29,7 @@
 #include "StringViewExample.cc"
 #include "StringViewSubstr.cc"
 #include "VariableScope.cc"
+#include "ShortCircuitEvaluation.cc"
 
 int main(int argc, char* argv[])
 {
@@ -37,10 +38,16 @@ int main(int argc, char* argv[])
   if(argc > 1)
     program = argv[1];
 
-  std::cout << program << "\n";
-  if(program == "ComparingFloatingPoint"){
+  if(program == "ComparingFloatingPoint")
+  {
     ComparingFloatingPoint cfp = ComparingFloatingPoint();
     cfp.execute();
+    return 0;
+  }
+  else if(program == "ShortCircuitEvaluation")
+  {
+    ShortCircuitEvaluation sce = ShortCircuitEvaluation();
+    sce.execute();
     return 0;
   }
 
