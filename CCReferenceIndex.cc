@@ -30,6 +30,7 @@
 #include "StringViewSubstr.cc"
 #include "VariableScope.cc"
 #include "ShortCircuitEvaluation.cc"
+#include "BitSetIntro.cc"
 
 int main(int argc, char* argv[])
 {
@@ -48,6 +49,12 @@ int main(int argc, char* argv[])
   {
     ShortCircuitEvaluation sce = ShortCircuitEvaluation();
     sce.execute();
+    return 0;
+  }
+  else if(program == "BitSetIntro")
+  {
+    BitSetIntro bsi = BitSetIntro();
+    bsi.execute();
     return 0;
   }
 

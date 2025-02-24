@@ -6,6 +6,7 @@ add_subdirectory(Ch2)
 add_subdirectory(Ch4)
 add_subdirectory(Ch5)
 add_subdirectory(Ch6)
+add_subdirectory(ChO)
 
 set(BUILD_SHARED_LIBS ON)
 
@@ -20,5 +21,6 @@ target_link_libraries(CCReferenceIndex
   PRIVATE Ch4
   PRIVATE Ch5
   PRIVATE Ch6
+  PRIVATE ChO
   PUBLIC compiler_flags
 )
