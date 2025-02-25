@@ -1,6 +1,6 @@
-#include "HelloWorld.cc"
-#include "SizeOfInt.cc"
 #include "AddingHeaderFiles.cc"
+#include "BitSetIntro.cc"
+#include "BitwiseOperators.cc"
 #include "CallingHeader.cc"
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
@@ -13,12 +13,14 @@
 #include "ForwardDeclaration.cc"
 #include "FunctionDefinition.cc"
 #include "GetlineDemo.cc"
+#include "HelloWorld.cc"
 #include "InfinityDemo.cc"
 #include "InputBooleanValues.cc"
 #include "ListInitialization.cc"
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
 #include "ScopeOfDefines.cc"
+#include "SizeOfInt.cc"
 #include "SizeOfTypes.cc"
 #include "SizeT.cc"
 #include "StaticCasting.cc"
@@ -30,7 +32,6 @@
 #include "StringViewSubstr.cc"
 #include "VariableScope.cc"
 #include "ShortCircuitEvaluation.cc"
-#include "BitSetIntro.cc"
 
 int main(int argc, char* argv[])
 {
@@ -55,6 +56,12 @@ int main(int argc, char* argv[])
   {
     BitSetIntro bsi = BitSetIntro();
     bsi.execute();
+    return 0;
+  }
+  else if(program == "BitwiseOperators")
+  {
+    BitwiseOperators bo = BitwiseOperators();
+    bo.execute();
     return 0;
   }
 
