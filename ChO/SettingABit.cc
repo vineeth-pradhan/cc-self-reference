@@ -20,7 +20,7 @@ class SettingABit
 
       std::cout << "Before setting a bit \n";
       std::cout << (std::bitset<8>) sample << "\n";
-      
+
       sample |= mask1;
 
       std::cout << "After setting a bit \n";

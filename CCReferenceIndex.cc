@@ -20,6 +20,7 @@
 #include "ListInitialization.cc"
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
+#include "ResettingABit.cc"
 #include "ScopeOfDefines.cc"
 #include "SettingABit.cc"
 #include "SizeOfInt.cc"
@@ -76,6 +77,12 @@ int main(int argc, char* argv[])
   {
     SettingABit sab = SettingABit();
     sab.execute();
+    return 0;
+  }
+  else if(program == "ResettingABit")
+  {
+    ResettingABit rab = ResettingABit();
+    rab.execute();
     return 0;
   }
 
