@@ -21,6 +21,7 @@
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
 #include "ScopeOfDefines.cc"
+#include "SettingABit.cc"
 #include "SizeOfInt.cc"
 #include "SizeOfTypes.cc"
 #include "SizeT.cc"
@@ -69,6 +70,12 @@ int main(int argc, char* argv[])
   {
     BitMask bm = BitMask();
     bm.execute();
+    return 0;
+  }
+  else if(program == "SettingABit")
+  {
+    SettingABit sab = SettingABit();
+    sab.execute();
     return 0;
   }
 
