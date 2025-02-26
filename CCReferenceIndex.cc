@@ -1,5 +1,6 @@
 #include "AddingHeaderFiles.cc"
 #include "BitSetIntro.cc"
+#include "BitMask.cc"
 #include "BitwiseOperators.cc"
 #include "CallingHeader.cc"
 #include "CharacterIntro.cc"
@@ -62,6 +63,12 @@ int main(int argc, char* argv[])
   {
     BitwiseOperators bo = BitwiseOperators();
     bo.execute();
+    return 0;
+  }
+  else if(program == "BitMask")
+  {
+    BitMask bm = BitMask();
+    bm.execute();
     return 0;
   }
 
