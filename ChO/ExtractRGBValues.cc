@@ -20,6 +20,13 @@ class ExtractRGBValues
       const std::uint8_t blue { static_cast<uint8_t>((pixel & blueBits) >> 8) };
       const std::uint8_t alpha { static_cast<uint8_t>(pixel & alphaBits) };
 
+      // std::cout << "(pixel & redBits) without right shifting: ------------------- \n";
+      // std::cout << "Red: " << std::bitset<8>(static_cast<int>(static_cast<uint8_t>(pixel & redBits))) << "\n";
+      // std::cout << "Green: " << static_cast<uint8_t>(pixel & greenBits) << "\n";
+      // std::cout << "Blue: " << static_cast<uint8_t>(pixel & blueBits) << "\n";
+      // std::cout << "Alpha: " << static_cast<uint8_t>(pixel & alphaBits) << "\n";
+      // std::cout << "------------------------------------------------------------- \n";
+
       std::cout << "Your color contains:\n";
       std::cout << std::hex; // print the following values in hex
 
