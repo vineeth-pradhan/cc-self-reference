@@ -11,6 +11,7 @@
 #include "DirectInitialization.cc"
 #include "Exponentiation.cc"
 #include "FixedWidthIntegers.cc"
+#include "FlipTheBit.cc"
 #include "ForwardDeclaration.cc"
 #include "FunctionDefinition.cc"
 #include "GetlineDemo.cc"
@@ -83,6 +84,12 @@ int main(int argc, char* argv[])
   {
     ResettingABit rab = ResettingABit();
     rab.execute();
+    return 0;
+  }
+  else if(program == "FlipTheBit")
+  {
+    FlipTheBit ftb = FlipTheBit();
+    ftb.execute();
     return 0;
   }
 
