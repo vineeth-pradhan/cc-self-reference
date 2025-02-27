@@ -10,6 +10,7 @@
 #include "ConditionalCompilation.cc"
 #include "DirectInitialization.cc"
 #include "Exponentiation.cc"
+#include "ExtractRGBValues.cc"
 #include "FixedWidthIntegers.cc"
 #include "FlipTheBit.cc"
 #include "ForwardDeclaration.cc"
@@ -90,6 +91,12 @@ int main(int argc, char* argv[])
   {
     FlipTheBit ftb = FlipTheBit();
     ftb.execute();
+    return 0;
+  }
+  else if(program == "ExtractRGBValues")
+  {
+    ExtractRGBValues eRGBValues = ExtractRGBValues();
+    eRGBValues.execute();
     return 0;
   }
 
