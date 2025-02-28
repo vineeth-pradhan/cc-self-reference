@@ -8,6 +8,7 @@
 #include "CommaOperator.cc"
 #include "ComparingFloatingPoint.cc"
 #include "ConditionalCompilation.cc"
+#include "DecimalToBinary.cc"
 #include "DirectInitialization.cc"
 #include "Exponentiation.cc"
 #include "ExtractRGBValues.cc"
@@ -97,6 +98,12 @@ int main(int argc, char* argv[])
   {
     ExtractRGBValues eRGBValues = ExtractRGBValues();
     eRGBValues.execute();
+    return 0;
+  }
+  else if(program == "DecimalToBinary")
+  {
+    DecimalToBinary dtb = DecimalToBinary();
+    dtb.execute();
     return 0;
   }
 
