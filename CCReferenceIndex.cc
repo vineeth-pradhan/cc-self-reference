@@ -1,25 +1,22 @@
 #include "AddingHeaderFiles.cc"
 #include "ChO.h"
+#include "Ch1.h"
 #include "CallingHeader.cc"
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
 #include "CommaOperator.cc"
 #include "ComparingFloatingPoint.cc"
 #include "ConditionalCompilation.cc"
-#include "DirectInitialization.cc"
 #include "Exponentiation.cc"
 #include "FixedWidthIntegers.cc"
 #include "ForwardDeclaration.cc"
 #include "FunctionDefinition.cc"
 #include "GetlineDemo.cc"
-#include "HelloWorld.cc"
 #include "InfinityDemo.cc"
 #include "InputBooleanValues.cc"
-#include "ListInitialization.cc"
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
 #include "ScopeOfDefines.cc"
-#include "SizeOfInt.cc"
 #include "SizeOfTypes.cc"
 #include "SizeT.cc"
 #include "StaticCasting.cc"
@@ -39,22 +36,10 @@ int main(int argc, char* argv[])
   if(argc > 1)
     program = argv[1];
 
-  if(program == "ComparingFloatingPoint")
+  if(program == "BitMask")
   {
-    ComparingFloatingPoint cfp = ComparingFloatingPoint();
-    cfp.execute();
-    return 0;
-  }
-  else if(program == "ShortCircuitEvaluation")
-  {
-    ShortCircuitEvaluation sce = ShortCircuitEvaluation();
-    sce.execute();
-    return 0;
-  }
-  else if(program == "BitSetIntro")
-  {
-    BitSetIntro bsi = BitSetIntro();
-    bsi.execute();
+    BitMask bm = BitMask();
+    bm.execute();
     return 0;
   }
   else if(program == "BitwiseOperators")
@@ -63,34 +48,16 @@ int main(int argc, char* argv[])
     bo.execute();
     return 0;
   }
-  else if(program == "BitMask")
+  else if(program == "BitSetIntro")
   {
-    BitMask bm = BitMask();
-    bm.execute();
+    BitSetIntro bsi = BitSetIntro();
+    bsi.execute();
     return 0;
   }
-  else if(program == "SettingABit")
+  else if(program == "ComparingFloatingPoint")
   {
-    SettingABit sab = SettingABit();
-    sab.execute();
-    return 0;
-  }
-  else if(program == "ResettingABit")
-  {
-    ResettingABit rab = ResettingABit();
-    rab.execute();
-    return 0;
-  }
-  else if(program == "FlipTheBit")
-  {
-    FlipTheBit ftb = FlipTheBit();
-    ftb.execute();
-    return 0;
-  }
-  else if(program == "ExtractRGBValues")
-  {
-    ExtractRGBValues eRGBValues = ExtractRGBValues();
-    eRGBValues.execute();
+    ComparingFloatingPoint cfp = ComparingFloatingPoint();
+    cfp.execute();
     return 0;
   }
   else if(program == "DecimalToBinary")
@@ -99,12 +66,61 @@ int main(int argc, char* argv[])
     dtb.execute();
     return 0;
   }
+  else if(program == "DirectInitialization")
+  {
+    DirectInitialization di = DirectInitialization();
+    di.execute();
+    return 0;
+  }
+  else if(program == "ExtractRGBValues")
+  {
+    ExtractRGBValues eRGBValues = ExtractRGBValues();
+    eRGBValues.execute();
+    return 0;
+  }
+  else if(program == "FlipTheBit")
+  {
+    FlipTheBit ftb = FlipTheBit();
+    ftb.execute();
+    return 0;
+  }
+  else if(program == "HelloWorld")
+  {
+    HelloWorld hw = HelloWorld();
+    hw.execute();
+    return 0;
+  }
+  else if(program == "ListInitialization")
+  {
+    ListInitialization li = ListInitialization();
+    li.execute();
+    return 0;
+  }
 
-  HelloWorld hw = HelloWorld();
-  hw.execute();
-
-  SizeOfInt si = SizeOfInt();
-  si.execute();
+  else if(program == "ResettingABit")
+  {
+    ResettingABit rab = ResettingABit();
+    rab.execute();
+    return 0;
+  }
+  else if(program == "SettingABit")
+  {
+    SettingABit sab = SettingABit();
+    sab.execute();
+    return 0;
+  }
+  else if(program == "ShortCircuitEvaluation")
+  {
+    ShortCircuitEvaluation sce = ShortCircuitEvaluation();
+    sce.execute();
+    return 0;
+  }
+  else if(program == "SizeOfInt")
+  {
+    SizeOfInt si = SizeOfInt();
+    si.execute();
+    return 0;
+  }
 
   AddingHeaderFiles ahf = AddingHeaderFiles();
   ahf.execute();
@@ -123,9 +139,6 @@ int main(int argc, char* argv[])
 
   ConditionalCompilation cc = ConditionalCompilation();
   cc.execute();
-
-  DirectInitialization di = DirectInitialization();
-  di.execute();
 
   Exponentiation e = Exponentiation();
   e.execute();
@@ -147,9 +160,6 @@ int main(int argc, char* argv[])
 
   InputBooleanValues ibv = InputBooleanValues();
   ibv.execute();
-
-  ListInitialization li = ListInitialization();
-  li.execute();
 
   NamedConstants nc = NamedConstants();
   nc.execute();

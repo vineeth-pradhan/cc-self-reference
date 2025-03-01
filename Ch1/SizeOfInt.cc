@@ -1,11 +1,7 @@
 #include <iostream>
+#include "Ch1.h"
 
-class SizeOfInt
+void SizeOfInt::execute()
 {
-  public:
-
-    void execute()
-    {
-      std::cout << "Size of int is: " << sizeof(int) << "\n";
-    }
+  std::cout << "Size of int is: " << sizeof(int) << "\n";
 };

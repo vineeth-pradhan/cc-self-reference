@@ -1,8 +1,8 @@
 add_library(Ch1 SHARED
-  HelloWorld.cc
-  SizeOfInt.cc
   DirectInitialization.cc
+  HelloWorld.cc
   ListInitialization.cc
+  SizeOfInt.cc
 )
 
 # This is needed to let the compiler navigate to find the
