@@ -1,10 +1,8 @@
 #include <iostream>
+#include "ChO.h"
 
-class ResettingABit
+void ResettingABit::execute()
 {
-  public:
-    void execute()
-    {
       [[maybe_unused]] constexpr std::uint8_t mask0 { 0b0000'0001 };
       [[maybe_unused]] constexpr std::uint8_t mask1 { 0b0000'0010 };
       [[maybe_unused]] constexpr std::uint8_t mask2 { 0b0000'0100 };
@@ -23,5 +21,4 @@ class ResettingABit
 
       std::cout << "After unsetting the binary 2 \n";
       std::cout << (std::bitset<8>) sample << "\n";
-    }
-};
+}
