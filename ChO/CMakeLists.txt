@@ -1,6 +1,7 @@
 add_library(ChO SHARED
-  BitSetIntro.cc
   BitMask.cc
+  BitSetIntro.cc
+  BitwiseOperators.cc
 )
 
 target_include_directories(ChO INTERFACE

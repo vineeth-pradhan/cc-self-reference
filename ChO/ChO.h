@@ -1,11 +1,19 @@
-class BitSetIntro
+#ifndef CHO
+#define CHO
+class ChO {};
+// ----------------------------------
+class BitMask:public ChO
 {
-  public:
-    void execute();
+  public: void execute();
 };
 
-class BitMask
+class BitSetIntro:public ChO
 {
-  public:
-    void execute();
+  public: void execute();
 };
+
+class BitwiseOperators:public ChO
+{
+  public: void execute();
+};
+#endif

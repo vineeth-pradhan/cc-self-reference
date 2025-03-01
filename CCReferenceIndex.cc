@@ -1,6 +1,5 @@
 #include "AddingHeaderFiles.cc"
 #include "ChO.h"
-#include "BitwiseOperators.cc"
 #include "CallingHeader.cc"
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
