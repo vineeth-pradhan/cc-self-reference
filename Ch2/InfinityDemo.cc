@@ -1,12 +1,8 @@
 #include <iostream>
+#include "Ch2.h"
 
-class InfinityDemo
+void InfinityDemo::execute()
 {
-  public:
-
-    void execute()
-    {
-      float c = INFINITY;
-      std::cout << c << std::endl;
-    }
+  float c = INFINITY;
+  std::cout << c << std::endl;
 };

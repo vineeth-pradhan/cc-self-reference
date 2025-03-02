@@ -1,25 +1,21 @@
 #include <iostream>
+#include "Ch2.h"
 
-class VariableScope
+int getNum()
 {
-  int getNum()
-  {
-    int input;
-    std::cout << "Please enter a number" << std::endl;
-    std::cin >> input;
-    return input;
-  }
+  int input;
+  std::cout << "Please enter a number" << std::endl;
+  std::cin >> input;
+  return input;
+}
 
-  void printNum(int num)
-  {
-    std::cout << num << std::endl;
-  }
+void printNum(int num)
+{
+  std::cout << num << std::endl;
+}
 
-  public:
-
-  void execute()
-  {
-    int num = getNum();
-    printNum(num);
-  }
+void VariableScope::execute()
+{
+  int num = getNum();
+  printNum(num);
 };

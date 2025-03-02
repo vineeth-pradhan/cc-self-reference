@@ -1,22 +1,16 @@
-#include "AddingHeaderFiles.cc"
 #include "ChO.h"
 #include "Ch1.h"
-#include "CallingHeader.cc"
+#include "Ch2.h"
 #include "CharacterIntro.cc"
 #include "CharArray.cc"
 #include "CommaOperator.cc"
 #include "ComparingFloatingPoint.cc"
-#include "ConditionalCompilation.cc"
 #include "Exponentiation.cc"
 #include "FixedWidthIntegers.cc"
-#include "ForwardDeclaration.cc"
-#include "FunctionDefinition.cc"
 #include "GetlineDemo.cc"
-#include "InfinityDemo.cc"
 #include "InputBooleanValues.cc"
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
-#include "ScopeOfDefines.cc"
 #include "SizeOfTypes.cc"
 #include "SizeT.cc"
 #include "StaticCasting.cc"
@@ -26,7 +20,6 @@
 #include "StringViewCornerCase4.cc"
 #include "StringViewExample.cc"
 #include "StringViewSubstr.cc"
-#include "VariableScope.cc"
 #include "ShortCircuitEvaluation.cc"
 
 int main(int argc, char* argv[])
@@ -36,7 +29,13 @@ int main(int argc, char* argv[])
   if(argc > 1)
     program = argv[1];
 
-  if(program == "BitMask")
+  if(program == "AddingHeaderFiles")
+  {
+    AddingHeaderFiles ahf = AddingHeaderFiles();
+    ahf.execute();
+    return 0;
+  }
+  else if(program == "BitMask")
   {
     BitMask bm = BitMask();
     bm.execute();
@@ -54,10 +53,22 @@ int main(int argc, char* argv[])
     bsi.execute();
     return 0;
   }
+  else if(program == "CallingHeader")
+  {
+    CallingHeader ch = CallingHeader();
+    ch.execute();
+    return 0;
+  }
   else if(program == "ComparingFloatingPoint")
   {
     ComparingFloatingPoint cfp = ComparingFloatingPoint();
     cfp.execute();
+    return 0;
+  }
+  else if(program == "ConditionalCompilation")
+  {
+    ConditionalCompilation cc = ConditionalCompilation();
+    cc.execute();
     return 0;
   }
   else if(program == "DecimalToBinary")
@@ -84,10 +95,28 @@ int main(int argc, char* argv[])
     ftb.execute();
     return 0;
   }
+  else if(program == "ForwardDeclaration")
+  {
+    ForwardDeclaration fd = ForwardDeclaration();
+    fd.execute();
+    return 0;
+  }
+  else if(program == "FunctionDefinition")
+  {
+    FunctionDefinition fd2 = FunctionDefinition();
+    fd2.execute();
+    return 0;
+  }
   else if(program == "HelloWorld")
   {
     HelloWorld hw = HelloWorld();
     hw.execute();
+    return 0;
+  }
+  else if(program == "InfinityDemo")
+  {
+    InfinityDemo id = InfinityDemo();
+    id.execute();
     return 0;
   }
   else if(program == "ListInitialization")
@@ -96,11 +125,16 @@ int main(int argc, char* argv[])
     li.execute();
     return 0;
   }
-
   else if(program == "ResettingABit")
   {
     ResettingABit rab = ResettingABit();
     rab.execute();
+    return 0;
+  }
+  else if(program == "ScopeOfDefines")
+  {
+    ScopeOfDefines sod = ScopeOfDefines();
+    sod.execute();
     return 0;
   }
   else if(program == "SettingABit")
@@ -121,12 +155,12 @@ int main(int argc, char* argv[])
     si.execute();
     return 0;
   }
-
-  AddingHeaderFiles ahf = AddingHeaderFiles();
-  ahf.execute();
-
-  CallingHeader ch = CallingHeader();
-  ch.execute();
+  else if(program == "VariableScope")
+  {
+    VariableScope vs = VariableScope();
+    vs.execute();
+    return 0;
+  }
 
   CharacterIntro ci = CharacterIntro();
   ci.execute();
@@ -137,26 +171,14 @@ int main(int argc, char* argv[])
   CommaOperator co = CommaOperator();
   co.execute();
 
-  ConditionalCompilation cc = ConditionalCompilation();
-  cc.execute();
-
   Exponentiation e = Exponentiation();
   e.execute();
 
   FixedWidthIntegers fwi = FixedWidthIntegers();
   fwi.execute();
 
-  ForwardDeclaration fd = ForwardDeclaration();
-  fd.execute();
-
-  FunctionDefinition fd2 = FunctionDefinition();
-  fd2.execute();
-
   GetlineDemo gd = GetlineDemo();
   gd.execute();
-
-  InfinityDemo id = InfinityDemo();
-  id.execute();
 
   InputBooleanValues ibv = InputBooleanValues();
   ibv.execute();
@@ -166,9 +188,6 @@ int main(int argc, char* argv[])
 
   NumeralSystem ns = NumeralSystem();
   ns.execute();
-
-  ScopeOfDefines sod = ScopeOfDefines();
-  sod.execute();
 
   SizeOfTypes sot = SizeOfTypes();
   sot.execute();
@@ -196,9 +215,6 @@ int main(int argc, char* argv[])
 
   StringViewSubstr svs = StringViewSubstr();
   svs.execute();
-
-  VariableScope vs = VariableScope();
-  vs.execute();
 
   return 0;
 }
