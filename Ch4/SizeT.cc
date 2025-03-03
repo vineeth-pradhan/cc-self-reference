@@ -1,14 +1,10 @@
 #include <iostream>
 #include <cstdint>
+#include "Ch4.h"
 
-class SizeT
+void SizeT::execute()
 {
-  public:
-
-    void execute()
-    {
-      std::size_t a = sizeof(int);
-      std::cout << "Size of int is " << a << "\n";
-    }
+  std::size_t a = sizeof(int);
+  std::cout << "Size of int is " << a << "\n";
 };
 

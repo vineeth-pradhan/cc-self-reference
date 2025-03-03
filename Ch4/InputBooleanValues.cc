@@ -1,16 +1,12 @@
 #include <iostream>
+#include "Ch4.h"
 
-class InputBooleanValues
+void InputBooleanValues::execute()
 {
-  public:
-
-    void execute()
-    {
-      std::cout << "Please enter a boolean value\n";
-      bool a;
-      std::cin >> std::boolalpha;
-      std::cin >> a;
-      std::cout << std::boolalpha;
-      std::cout << "You entered " << a << "\n";
-    }
+  std::cout << "Please enter a boolean value\n";
+  bool a;
+  std::cin >> std::boolalpha;
+  std::cin >> a;
+  std::cout << std::boolalpha;
+  std::cout << "You entered " << a << "\n";
 };

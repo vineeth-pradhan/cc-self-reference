@@ -1,11 +1,8 @@
 #include <iostream>
+#include "Ch4.h"
 
-class FixedWidthIntegers
+void FixedWidthIntegers::execute()
 {
-  public:
-    void execute()
-    {
-      std::int16_t a = 32767;
-      std::cout << "Value of int8_t a is " << a << "\n";
-    }
+  std::int16_t a = 32767;
+  std::cout << "Value of int8_t a is " << a << "\n";
 };

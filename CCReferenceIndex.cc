@@ -1,18 +1,13 @@
 #include "ChO.h"
 #include "Ch1.h"
 #include "Ch2.h"
-#include "CharacterIntro.cc"
-#include "CharArray.cc"
+#include "Ch4.h"
 #include "CommaOperator.cc"
 #include "ComparingFloatingPoint.cc"
 #include "Exponentiation.cc"
-#include "FixedWidthIntegers.cc"
 #include "GetlineDemo.cc"
-#include "InputBooleanValues.cc"
 #include "NamedConstants.cc"
 #include "NumeralSystem.cc"
-#include "SizeOfTypes.cc"
-#include "SizeT.cc"
 #include "StaticCasting.cc"
 #include "StringViewCornerCase.cc"
 #include "StringViewCornerCase2.cc"
@@ -21,6 +16,7 @@
 #include "StringViewExample.cc"
 #include "StringViewSubstr.cc"
 #include "ShortCircuitEvaluation.cc"
+#include <cinttypes>
 
 int main(int argc, char* argv[])
 {
@@ -59,6 +55,18 @@ int main(int argc, char* argv[])
     ch.execute();
     return 0;
   }
+  else if(program == "CharArray")
+  {
+    CharArray ca = CharArray();
+    ca.execute();
+    return 0;
+  }
+  else if(program == "CharacterIntro")
+  {
+    CharacterIntro ci = CharacterIntro();
+    ci.execute();
+    return 0;
+  }
   else if(program == "ComparingFloatingPoint")
   {
     ComparingFloatingPoint cfp = ComparingFloatingPoint();
@@ -89,6 +97,12 @@ int main(int argc, char* argv[])
     eRGBValues.execute();
     return 0;
   }
+  else if(program == "FixedWidthIntegers")
+  {
+    FixedWidthIntegers fwi = FixedWidthIntegers();
+    fwi.execute();
+    return 0;
+  }
   else if(program == "FlipTheBit")
   {
     FlipTheBit ftb = FlipTheBit();
@@ -117,6 +131,12 @@ int main(int argc, char* argv[])
   {
     InfinityDemo id = InfinityDemo();
     id.execute();
+    return 0;
+  }
+  else if(program == "InputBooleanValues")
+  {
+    InputBooleanValues ibv = InputBooleanValues();
+    ibv.execute();
     return 0;
   }
   else if(program == "ListInitialization")
@@ -155,6 +175,24 @@ int main(int argc, char* argv[])
     si.execute();
     return 0;
   }
+  else if(program == "SizeOfTypes")
+  {
+    SizeOfTypes sot = SizeOfTypes();
+    sot.execute();
+    return 0;
+  }
+  else if(program == "SizeT")
+  {
+    SizeT st = SizeT();
+    st.execute();
+    return 0;
+  }
+  else if(program == "StaticCasting")
+  {
+    StaticCasting sc = StaticCasting();
+    sc.execute();
+    return 0;
+  }
   else if(program == "VariableScope")
   {
     VariableScope vs = VariableScope();
@@ -162,20 +200,11 @@ int main(int argc, char* argv[])
     return 0;
   }
 
-  CharacterIntro ci = CharacterIntro();
-  ci.execute();
-
-  CharArray ca = CharArray();
-  ca.execute();
-
   CommaOperator co = CommaOperator();
   co.execute();
 
   Exponentiation e = Exponentiation();
   e.execute();
-
-  FixedWidthIntegers fwi = FixedWidthIntegers();
-  fwi.execute();
 
   GetlineDemo gd = GetlineDemo();
   gd.execute();
@@ -188,15 +217,6 @@ int main(int argc, char* argv[])
 
   NumeralSystem ns = NumeralSystem();
   ns.execute();
-
-  SizeOfTypes sot = SizeOfTypes();
-  sot.execute();
-
-  SizeT st = SizeT();
-  st.execute();
-
-  StaticCasting sc = StaticCasting();
-  sc.execute();
 
   StringViewCornerCase svcs = StringViewCornerCase();
   svcs.execute();
