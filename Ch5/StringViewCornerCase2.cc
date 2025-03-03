@@ -1,19 +1,16 @@
 #include <iostream>
+#include "Ch5.h"
 
-class StringViewCornerCase2
+std::string getName()
 {
-  std::string getName()
-  {
-    std::string s { "Vineeth Pradhan" };
-    return s;
-  }
+  std::string s { "Vineeth Pradhan" };
+  return s;
+}
 
-  public:
+void StringViewCornerCase2::execute()
+{
 
-  void execute()
-  {
-    std::string_view sView { getName() };
+  std::string_view sView { getName() };
 
-    std::cout << sView << "\n";
-  }
+  std::cout << sView << "\n";
 };

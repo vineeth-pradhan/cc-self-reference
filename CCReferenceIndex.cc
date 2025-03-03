@@ -2,19 +2,13 @@
 #include "Ch1.h"
 #include "Ch2.h"
 #include "Ch4.h"
+#include "Ch5.h"
 #include "CommaOperator.cc"
 #include "ComparingFloatingPoint.cc"
 #include "Exponentiation.cc"
-#include "GetlineDemo.cc"
-#include "NamedConstants.cc"
-#include "NumeralSystem.cc"
 #include "StaticCasting.cc"
-#include "StringViewCornerCase.cc"
-#include "StringViewCornerCase2.cc"
 #include "StringViewCornerCase3.cc"
 #include "StringViewCornerCase4.cc"
-#include "StringViewExample.cc"
-#include "StringViewSubstr.cc"
 #include "ShortCircuitEvaluation.cc"
 #include <cinttypes>
 
@@ -121,6 +115,12 @@ int main(int argc, char* argv[])
     fd2.execute();
     return 0;
   }
+  else if(program == "GetlineDemo")
+  {
+    GetlineDemo gd = GetlineDemo();
+    gd.execute();
+    return 0;
+  }
   else if(program == "HelloWorld")
   {
     HelloWorld hw = HelloWorld();
@@ -143,6 +143,18 @@ int main(int argc, char* argv[])
   {
     ListInitialization li = ListInitialization();
     li.execute();
+    return 0;
+  }
+  else if(program == "NamedConstants")
+  {
+    NamedConstants nc = NamedConstants();
+    nc.execute();
+    return 0;
+  }
+  else if(program == "NumeralSystem")
+  {
+    NumeralSystem ns = NumeralSystem();
+    ns.execute();
     return 0;
   }
   else if(program == "ResettingABit")
@@ -193,6 +205,42 @@ int main(int argc, char* argv[])
     sc.execute();
     return 0;
   }
+  else if(program == "StringViewCornerCase")
+  {
+    StringViewCornerCase svcs = StringViewCornerCase();
+    svcs.execute();
+    return 0;
+  }
+  else if(program == "StringViewCornerCase2")
+  {
+    StringViewCornerCase2 svcs2 = StringViewCornerCase2();
+    svcs2.execute();
+    return 0;
+  }
+  else if(program == "StringViewCornerCase3")
+  {
+    StringViewCornerCase3 svcs3 = StringViewCornerCase3();
+    svcs3.execute();
+    return 0;
+  }
+  else if(program == "StringViewCornerCase4")
+  {
+    StringViewCornerCase4 svcs4 = StringViewCornerCase4();
+    svcs4.execute();
+    return 0;
+  }
+  else if(program == "StringViewExample")
+  {
+    StringViewExample sve = StringViewExample();
+    sve.execute();
+    return 0;
+  }
+  else if(program == "StringViewSubStr")
+  {
+    StringViewSubStr svs = StringViewSubStr();
+    svs.execute();
+    return 0;
+  }
   else if(program == "VariableScope")
   {
     VariableScope vs = VariableScope();
@@ -206,35 +254,8 @@ int main(int argc, char* argv[])
   Exponentiation e = Exponentiation();
   e.execute();
 
-  GetlineDemo gd = GetlineDemo();
-  gd.execute();
-
   InputBooleanValues ibv = InputBooleanValues();
   ibv.execute();
-
-  NamedConstants nc = NamedConstants();
-  nc.execute();
-
-  NumeralSystem ns = NumeralSystem();
-  ns.execute();
-
-  StringViewCornerCase svcs = StringViewCornerCase();
-  svcs.execute();
-
-  StringViewCornerCase2 svcs2 = StringViewCornerCase2();
-  svcs2.execute();
-
-  StringViewCornerCase3 svcs3 = StringViewCornerCase3();
-  svcs3.execute();
-
-  StringViewCornerCase4 svcs4 = StringViewCornerCase4();
-  svcs4.execute();
-
-  StringViewExample sve = StringViewExample();
-  sve.execute();
-
-  StringViewSubstr svs = StringViewSubstr();
-  svs.execute();
 
   return 0;
 }

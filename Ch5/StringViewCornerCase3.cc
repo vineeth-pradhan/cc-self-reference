@@ -1,24 +1,18 @@
 #include <iostream>
+#include "Ch5.h"
 
-class StringViewCornerCase3
+void StringViewCornerCase3::execute()
 {
-  public:
+  std::string s { "Hello World" };
+  std::string_view sView { s };
 
-  // g++ -o main -std=c++11 StringViewCornerCase3.cc
-  // ./main
-  void execute()
-  {
-    std::string s { "Hello World" };
-    std::string_view sView { s };
+  s = "Hello Universe";
 
-    s = "Hello Universe";
+  // Prints Hello Unive. Omits out 'rse'
+  std::cout << sView << "\n";
 
-    // Prints Hello Unive. Omits out 'rse'
-    std::cout << sView << "\n";
+  sView = s;
 
-    sView = s;
-
-    // ok
-    std::cout << sView << "\n";
-  }
+  // ok
+  std::cout << sView << "\n";
 };
