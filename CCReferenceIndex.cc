@@ -1,3 +1,4 @@
+#include <iostream>
 #include "ChO.h"
 #include "Ch1.h"
 #include "Ch2.h"
@@ -11,6 +12,10 @@ int main(int argc, char* argv[])
 
   if(argc > 1)
     program = argv[1];
+  else{
+    std::cerr << "Too fee arguments! Please input a valid program name as an argument to continue\n";
+    return 0;
+  }
 
   if(program == "AddingHeaderFiles")
   {
@@ -252,6 +257,8 @@ int main(int argc, char* argv[])
     vs.execute();
     return 0;
   }
-
-  return 0;
+  else
+  {
+    std::cerr << "Invalid input argument, please input a valid program name as an input argument to run this program\n";
+  }
 }
