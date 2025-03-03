@@ -3,14 +3,7 @@
 #include "Ch2.h"
 #include "Ch4.h"
 #include "Ch5.h"
-#include "CommaOperator.cc"
-#include "ComparingFloatingPoint.cc"
-#include "Exponentiation.cc"
-#include "StaticCasting.cc"
-#include "StringViewCornerCase3.cc"
-#include "StringViewCornerCase4.cc"
-#include "ShortCircuitEvaluation.cc"
-#include <cinttypes>
+#include "Ch6.h"
 
 int main(int argc, char* argv[])
 {
@@ -61,6 +54,12 @@ int main(int argc, char* argv[])
     ci.execute();
     return 0;
   }
+  else if(program == "CommaOperator")
+  {
+    CommaOperator co = CommaOperator();
+    co.execute();
+    return 0;
+  }
   else if(program == "ComparingFloatingPoint")
   {
     ComparingFloatingPoint cfp = ComparingFloatingPoint();
@@ -83,6 +82,12 @@ int main(int argc, char* argv[])
   {
     DirectInitialization di = DirectInitialization();
     di.execute();
+    return 0;
+  }
+  else if(program == "Exponentiation")
+  {
+    Exponentiation e = Exponentiation();
+    e.execute();
     return 0;
   }
   else if(program == "ExtractRGBValues")
@@ -247,15 +252,6 @@ int main(int argc, char* argv[])
     vs.execute();
     return 0;
   }
-
-  CommaOperator co = CommaOperator();
-  co.execute();
-
-  Exponentiation e = Exponentiation();
-  e.execute();
-
-  InputBooleanValues ibv = InputBooleanValues();
-  ibv.execute();
 
   return 0;
 }

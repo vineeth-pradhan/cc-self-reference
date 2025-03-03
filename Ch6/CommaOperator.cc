@@ -1,14 +1,10 @@
 #include <iostream>
+#include "Ch6.h"
 
-class CommaOperator
+void CommaOperator::execute()
 {
-  public:
+  int x{2};
+  int y{3};
 
-  void execute()
-  {
-    int x{2};
-    int y{3};
-
-    std::cout << "Adding x, y using increment operator: " << (++x, ++y) << "\n";
-  }
+  std::cout << "Adding x, y using increment operator: " << (++x, ++y) << "\n";
 };

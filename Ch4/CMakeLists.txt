@@ -5,6 +5,7 @@ add_library(Ch4 SHARED
   InputBooleanValues.cc
   SizeOfTypes.cc
   SizeT.cc
+  StaticCasting.cc
 )
 
 target_include_directories(Ch4 INTERFACE
