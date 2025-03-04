@@ -5,6 +5,7 @@
 #include "Ch4.h"
 #include "Ch5.h"
 #include "Ch6.h"
+#include "Ch7.h"
 
 int main(int argc, char* argv[])
 {
@@ -161,6 +162,12 @@ int main(int argc, char* argv[])
     nc.execute();
     return 0;
   }
+  else if(program == "NamingCollision")
+  {
+    NamingCollision nc = NamingCollision();
+    nc.execute();
+    return 0;
+  }
   else if(program == "NumeralSystem")
   {
     NumeralSystem ns = NumeralSystem();
@@ -249,6 +256,12 @@ int main(int argc, char* argv[])
   {
     StringViewSubStr svs = StringViewSubStr();
     svs.execute();
+    return 0;
+  }
+  else if(program == "UsingAliases")
+  {
+    UsingAliases ua = UsingAliases();
+    ua.execute();
     return 0;
   }
   else if(program == "VariableScope")
