@@ -28,3 +28,8 @@ class UsingAliases:public Ch7
 {
   public: void execute();
 };
+
+class DefiningVariablesWithLinkage: public Ch7
+{
+  public: void execute();
+};

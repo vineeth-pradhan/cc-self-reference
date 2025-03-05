@@ -4,6 +4,7 @@ add_library(Ch7 SHARED
   NamingCollision.cc
   UsingAliases.cc
   bar_kar.cc
+  DefiningVariablesWithLinkage.cc
 )
 
 target_include_directories(Ch7 INTERFACE

@@ -84,6 +84,11 @@ int main(int argc, char* argv[])
     dtb.execute();
     return 0;
   }
+  else if(program == "DefiningVariablesWithLinkage")
+  {
+    DefiningVariablesWithLinkage dvwl = DefiningVariablesWithLinkage();
+    dvwl.execute();
+  }
   else if(program == "DirectInitialization")
   {
     DirectInitialization di = DirectInitialization();
