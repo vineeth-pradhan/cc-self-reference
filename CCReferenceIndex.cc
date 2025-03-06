@@ -101,6 +101,12 @@ int main(int argc, char* argv[])
     e.execute();
     return 0;
   }
+  else if(program == "ExternalLinkage")
+  {
+    ExternalLinkage el = ExternalLinkage();
+    el.execute();
+    return 0;
+  }
   else if(program == "ExtractRGBValues")
   {
     ExtractRGBValues eRGBValues = ExtractRGBValues();

@@ -33,3 +33,8 @@ class DefiningVariablesWithLinkage: public Ch7
 {
   public: void execute();
 };
+
+class ExternalLinkage: public Ch7
+{
+  public: void execute();
+};

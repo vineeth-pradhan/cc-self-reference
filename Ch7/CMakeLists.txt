@@ -1,10 +1,12 @@
 add_library(Ch7 SHARED
+  add.cc
+  bar_kar.cc
+  DefiningVariablesWithLinkage.cc
+  ExternalLinkage.cc
   foo.cc
   goo.cc
   NamingCollision.cc
   UsingAliases.cc
-  bar_kar.cc
-  DefiningVariablesWithLinkage.cc
 )
 
 target_include_directories(Ch7 INTERFACE
