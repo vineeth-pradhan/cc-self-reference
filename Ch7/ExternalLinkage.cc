@@ -3,9 +3,11 @@
 
 // Without forward declaration and despite the add.cc included in the library in Ch7/CMakeLists.txt file, the linker will fail
 int add(int, int);
+extern int g_resultGuess;
 
 // Without the add.cc added to the library in Ch7/CMakeLists.cc, the linker will fail
 void ExternalLinkage::execute()
 {
   std::cout << add(3,4) << "\n";
+  std::cout << "Guessed result = " << g_resultGuess << "\n";
 }
