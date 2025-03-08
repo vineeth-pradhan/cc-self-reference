@@ -275,6 +275,12 @@ int main(int argc, char* argv[])
     ua.execute();
     return 0;
   }
+  else if(program == "UsingNSForConstants")
+  {
+    UsingNSForConstants unsfc = UsingNSForConstants();
+    unsfc.execute();
+    return 0;
+  }
   else if(program == "VariableScope")
   {
     VariableScope vs = VariableScope();

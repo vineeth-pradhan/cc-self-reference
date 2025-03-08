@@ -7,6 +7,7 @@ add_library(Ch7 SHARED
   goo.cc
   NamingCollision.cc
   UsingAliases.cc
+  UsingNSForConstants.cc
 )
 
 target_include_directories(Ch7 INTERFACE
