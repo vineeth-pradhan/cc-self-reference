@@ -39,11 +39,6 @@ class ExternalLinkage: public Ch7
   public: void execute();
 };
 
-namespace constants
-{
-  constexpr float gravity { 9.8 };
-}
-
 class UsingNSForConstants: public Ch7
 {
   private: float getMass(float);
