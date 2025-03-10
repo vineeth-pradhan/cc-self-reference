@@ -8,6 +8,7 @@ add_library(Ch7 SHARED
   NamingCollision.cc
   UsingAliases.cc
   UsingNSForConstants.cc constants.cc
+  InlineFunction.cc
 )
 
 target_include_directories(Ch7 INTERFACE

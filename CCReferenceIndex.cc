@@ -155,6 +155,12 @@ int main(int argc, char* argv[])
     id.execute();
     return 0;
   }
+  else if(program == "InlineFunction")
+  {
+    InlineFunction ifn = InlineFunction();
+    ifn.execute();
+    return 0;
+  }
   else if(program == "InputBooleanValues")
   {
     InputBooleanValues ibv = InputBooleanValues();

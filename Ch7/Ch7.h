@@ -39,6 +39,11 @@ class ExternalLinkage: public Ch7
   public: void execute();
 };
 
+class InlineFunction: public Ch7
+{
+  public: void execute();
+};
+
 class UsingNSForConstants: public Ch7
 {
   private: float getMass(float);
