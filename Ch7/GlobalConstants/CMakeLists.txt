@@ -2,7 +2,6 @@ add_library(GlobalConstants SHARED
   physics.cc
   chemistry.cc
   math.cc
-  constants.cc
 )
 
 target_include_directories(GlobalConstants INTERFACE

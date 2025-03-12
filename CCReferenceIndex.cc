@@ -143,6 +143,12 @@ int main(int argc, char* argv[])
     gd.execute();
     return 0;
   }
+  else if(program == "GlobalConstantsExample")
+  {
+    GlobalConstantsExample gce = GlobalConstantsExample();
+    gce.execute();
+    return 0;
+  }
   else if(program == "HelloWorld")
   {
     HelloWorld hw = HelloWorld();

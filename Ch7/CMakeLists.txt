@@ -9,10 +9,16 @@ add_library(Ch7 SHARED
   UsingAliases.cc
   UsingNSForConstants.cc constants.cc
   InlineFunction.cc
+  GlobalConstantsExample.cc
 )
+
+add_subdirectory(GlobalConstants)
 
 target_include_directories(Ch7 INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
 
-target_link_libraries(Ch7 PRIVATE compiler_flags)
+target_link_libraries(Ch7
+  PRIVATE GlobalConstants
+  PRIVATE compiler_flags
+)
