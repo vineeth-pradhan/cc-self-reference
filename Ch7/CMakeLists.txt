@@ -12,13 +12,13 @@ add_library(Ch7 SHARED
   GlobalConstantsExample.cc
 )
 
-add_subdirectory(GlobalConstants)
+add_subdirectory(G_IntVariables)
 
 target_include_directories(Ch7 INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
 
 target_link_libraries(Ch7
-  PRIVATE GlobalConstants
+  PRIVATE G_IntVariables
   PRIVATE compiler_flags
 )

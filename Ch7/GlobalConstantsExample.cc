@@ -1,5 +1,5 @@
 #include "Ch7.h"
-#include "GlobalConstants.h"
+#include "G_IntVariables.h"
 
 void GlobalConstantsExample::execute()
 {

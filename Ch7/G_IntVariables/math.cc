@@ -1,6 +1,6 @@
 #include <iostream>
 #include "constants.h"
-#include "GlobalConstants.h"
+#include "G_IntVariables.h"
 
 void Math::execute()
 {
