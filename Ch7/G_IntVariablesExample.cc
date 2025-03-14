@@ -1,7 +1,7 @@
 #include "Ch7.h"
 #include "G_IntVariables.h"
 
-void GlobalConstantsExample::execute()
+void G_IntVariablesExample::execute()
 {
   Chemistry chemistry = Chemistry();
   chemistry.execute();

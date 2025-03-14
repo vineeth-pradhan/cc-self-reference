@@ -50,7 +50,12 @@ class UsingNSForConstants: public Ch7
   public: void execute();
 };
 
-class GlobalConstantsExample: public Ch7
+class G_IntVariablesExample: public Ch7
+{
+  public: void execute();
+};
+
+class G_ExtVariablesExample: public Ch7
 {
   public: void execute();
 };

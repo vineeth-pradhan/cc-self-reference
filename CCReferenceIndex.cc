@@ -143,10 +143,16 @@ int main(int argc, char* argv[])
     gd.execute();
     return 0;
   }
-  else if(program == "GlobalConstantsExample")
+  else if(program == "G_ExtVariablesExample")
   {
-    GlobalConstantsExample gce = GlobalConstantsExample();
-    gce.execute();
+    G_ExtVariablesExample gExtVar = G_ExtVariablesExample();
+    gExtVar.execute();
+    return 0;
+  }
+  else if(program == "G_IntVariablesExample")
+  {
+    G_IntVariablesExample gIntVar = G_IntVariablesExample();
+    gIntVar.execute();
     return 0;
   }
   else if(program == "HelloWorld")
