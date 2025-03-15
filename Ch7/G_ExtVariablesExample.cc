@@ -3,12 +3,12 @@
 
 void G_ExtVariablesExample::execute()
 {
-  Chemistry chemistry = Chemistry();
+  EChemistry chemistry = EChemistry();
   chemistry.execute();
 
-  Math math = Math();
+  EMath math = EMath();
   math.execute();
 
-  Physics physics = Physics();
+  EPhysics physics = EPhysics();
   physics.execute();
 }

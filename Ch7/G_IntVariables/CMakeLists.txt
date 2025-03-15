@@ -1,7 +1,7 @@
 add_library(G_IntVariables SHARED
-  physics.cc
-  chemistry.cc
-  math.cc
+  iphysics.cc
+  ichemistry.cc
+  imath.cc
 )
 
 target_include_directories(G_IntVariables INTERFACE

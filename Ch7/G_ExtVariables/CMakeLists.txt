@@ -1,7 +1,8 @@
 add_library(G_ExtVariables SHARED
-  physics.cc
-  chemistry.cc
-  math.cc
+  ephysics.cc
+  echemistry.cc
+  emath.cc
+  externals.cc
 )
 
 target_include_directories(G_ExtVariables INTERFACE

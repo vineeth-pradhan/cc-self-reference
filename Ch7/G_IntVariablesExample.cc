@@ -3,12 +3,12 @@
 
 void G_IntVariablesExample::execute()
 {
-  Chemistry chemistry = Chemistry();
+  IChemistry chemistry = IChemistry();
   chemistry.execute();
 
-  Math math = Math();
+  IMath math = IMath();
   math.execute();
 
-  Physics physics = Physics();
+  IPhysics physics = IPhysics();
   physics.execute();
 }
