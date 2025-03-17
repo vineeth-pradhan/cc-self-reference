@@ -149,6 +149,12 @@ int main(int argc, char* argv[])
     gExtVar.execute();
     return 0;
   }
+  else if(program == "G_InlVariablesExample")
+  {
+    G_InlVariablesExample gInlVar = G_InlVariablesExample();
+    gInlVar.execute();
+    return 0;
+  }
   else if(program == "G_IntVariablesExample")
   {
     G_IntVariablesExample gIntVar = G_IntVariablesExample();

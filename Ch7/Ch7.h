@@ -55,6 +55,11 @@ class G_IntVariablesExample: public Ch7
   public: void execute();
 };
 
+class G_InlVariablesExample: public Ch7
+{
+  public: void execute();
+};
+
 class G_ExtVariablesExample: public Ch7
 {
   public: void execute();
