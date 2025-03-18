@@ -3,8 +3,8 @@
 
 void UsingStaticLocalVariables::keepIncrementing()
 {
-  static int counter {1};
-  counter += 1;
+  static int s_counter {1};
+  s_counter += 1;
   std::cout << "Counter now " << counter << "\n";
 }
 
