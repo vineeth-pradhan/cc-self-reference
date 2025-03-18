@@ -19,6 +19,13 @@ namespace Bar
 
 int sum(int, int);
 
+class AutoIncrement: public Ch7
+{
+  public:
+    void execute();
+    void increment();
+};
+
 class DefiningVariablesWithLinkage: public Ch7
 {
   public: void execute();
@@ -63,11 +70,4 @@ class UsingNSForConstants: public Ch7
 {
   private: float getMass(float);
   public: void execute();
-};
-
-class UsingStaticLocalVariables: public Ch7
-{
-  public:
-    void execute();
-    void keepIncrementing();
 };

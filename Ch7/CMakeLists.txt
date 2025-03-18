@@ -1,5 +1,6 @@
 add_library(Ch7 SHARED
   add.cc
+  AutoIncrement.cc
   bar_kar.cc
   DefiningVariablesWithLinkage.cc
   ExternalLinkage.cc
@@ -12,7 +13,6 @@ add_library(Ch7 SHARED
   NamingCollision.cc
   UsingAliases.cc
   UsingNSForConstants.cc constants.cc
-  UsingStaticLocalVariables.cc
 )
 
 add_subdirectory(G_IntVariables)

@@ -24,6 +24,12 @@ int main(int argc, char* argv[])
     ahf.execute();
     return 0;
   }
+  else if(program == "AutoIncrement")
+  {
+    AutoIncrement ai = AutoIncrement();
+    ai.execute();
+    return 0;
+  }
   else if(program == "BitMask")
   {
     BitMask bm = BitMask();
@@ -303,12 +309,6 @@ int main(int argc, char* argv[])
   {
     UsingNSForConstants unsfc = UsingNSForConstants();
     unsfc.execute();
-    return 0;
-  }
-  else if(program == "UsingStaticLocalVariables")
-  {
-    UsingStaticLocalVariables uslv = UsingStaticLocalVariables();
-    uslv.execute();
     return 0;
   }
   else if(program == "VariableScope")
