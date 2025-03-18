@@ -8,6 +8,10 @@ void UsingStaticLocalVariables::keepIncrementing()
   std::cout << "Counter now " << counter << "\n";
 }
 
+// Prints:
+// Counter now 2
+// Counter now 3
+// Counter now 4
 void UsingStaticLocalVariables::execute()
 {
   this->keepIncrementing();
