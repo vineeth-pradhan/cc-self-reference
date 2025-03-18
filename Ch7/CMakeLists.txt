@@ -4,14 +4,15 @@ add_library(Ch7 SHARED
   DefiningVariablesWithLinkage.cc
   ExternalLinkage.cc
   foo.cc
-  goo.cc
-  NamingCollision.cc
-  UsingAliases.cc
-  UsingNSForConstants.cc constants.cc
-  InlineFunction.cc
   G_IntVariablesExample.cc
   G_ExtVariablesExample.cc
   G_InlVariablesExample.cc
+  goo.cc
+  InlineFunction.cc
+  NamingCollision.cc
+  UsingAliases.cc
+  UsingNSForConstants.cc constants.cc
+  UsingStaticLocalVariables.cc
 )
 
 add_subdirectory(G_IntVariables)

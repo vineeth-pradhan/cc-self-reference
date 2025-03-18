@@ -305,6 +305,12 @@ int main(int argc, char* argv[])
     unsfc.execute();
     return 0;
   }
+  else if(program == "UsingStaticLocalVariables")
+  {
+    UsingStaticLocalVariables uslv = UsingStaticLocalVariables();
+    uslv.execute();
+    return 0;
+  }
   else if(program == "VariableScope")
   {
     VariableScope vs = VariableScope();
