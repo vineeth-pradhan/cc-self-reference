@@ -30,6 +30,12 @@ int main(int argc, char* argv[])
     ai.execute();
     return 0;
   }
+  else if(program == "AutoStorageDuration")
+  {
+    AutoStorageDuration asd = AutoStorageDuration();
+    asd.execute();
+    return 0;
+  }
   else if(program == "BitMask")
   {
     BitMask bm = BitMask();

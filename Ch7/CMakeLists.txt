@@ -1,6 +1,7 @@
 add_library(Ch7 SHARED
   add.cc
   AutoIncrement.cc
+  AutoStorageDuration.cc
   bar_kar.cc
   DefiningVariablesWithLinkage.cc
   ExternalLinkage.cc

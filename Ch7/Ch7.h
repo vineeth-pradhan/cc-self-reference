@@ -26,6 +26,12 @@ class AutoIncrement: public Ch7
     void increment();
 };
 
+class AutoStorageDuration: public Ch7
+{
+  public:
+    void execute();
+};
+
 class DefiningVariablesWithLinkage: public Ch7
 {
   public: void execute();
