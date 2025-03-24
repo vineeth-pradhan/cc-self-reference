@@ -72,6 +72,11 @@ class UsingAliases:public Ch7
   public: void execute();
 };
 
+class UsingDeclarations: public Ch7
+{
+  public: void execute();
+};
+
 class UsingNSForConstants: public Ch7
 {
   private: float getMass(float);

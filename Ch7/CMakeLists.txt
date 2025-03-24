@@ -13,6 +13,7 @@ add_library(Ch7 SHARED
   InlineFunction.cc
   NamingCollision.cc
   UsingAliases.cc
+  UsingDeclarations.cc
   UsingNSForConstants.cc constants.cc
 )
 

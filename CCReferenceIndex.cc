@@ -311,6 +311,12 @@ int main(int argc, char* argv[])
     ua.execute();
     return 0;
   }
+  else if(program == "UsingDeclarations")
+  {
+    UsingDeclarations ud = UsingDeclarations();
+    ud.execute();
+    return 0;
+  }
   else if(program == "UsingNSForConstants")
   {
     UsingNSForConstants unsfc = UsingNSForConstants();
