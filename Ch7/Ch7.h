@@ -17,7 +17,7 @@ namespace Bar
   }
 }
 
-int sum(int, int);
+// int sum(int, int);
 
 class AutoIncrement: public Ch7
 {
@@ -63,6 +63,11 @@ class G_ExtVariablesExample: public Ch7
 };
 
 class NamingCollision:public Ch7
+{
+  public: void execute();
+};
+
+class ReplacingNamespaces: public Ch7
 {
   public: void execute();
 };

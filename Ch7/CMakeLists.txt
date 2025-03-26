@@ -12,6 +12,7 @@ add_library(Ch7 SHARED
   goo.cc
   InlineFunction.cc
   NamingCollision.cc
+  ReplacingNamespaces.cc
   UsingAliases.cc
   UsingDeclarations.cc
   UsingNSForConstants.cc constants.cc

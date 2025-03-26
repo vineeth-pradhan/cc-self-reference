@@ -221,6 +221,12 @@ int main(int argc, char* argv[])
     ns.execute();
     return 0;
   }
+  else if(program == "ReplacingNamespaces")
+  {
+    ReplacingNamespaces rn = ReplacingNamespaces();
+    rn.execute();
+    return 0;
+  }
   else if(program == "ResettingABit")
   {
     ResettingABit rab = ResettingABit();
