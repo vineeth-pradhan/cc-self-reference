@@ -1,5 +1,6 @@
 add_library(Ch7 SHARED
   add.cc
+  AnonymousNamespace.cc
   AutoIncrement.cc
   AutoStorageDuration.cc
   bar_kar.cc

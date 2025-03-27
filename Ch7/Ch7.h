@@ -19,6 +19,11 @@ namespace Bar
 
 // int sum(int, int);
 
+class AnonymousNamespace: public Ch7
+{
+  public: void execute();
+};
+
 class AutoIncrement: public Ch7
 {
   public:

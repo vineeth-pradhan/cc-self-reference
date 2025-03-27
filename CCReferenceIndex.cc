@@ -24,6 +24,12 @@ int main(int argc, char* argv[])
     ahf.execute();
     return 0;
   }
+  else if(program == "AnonymousNamespace")
+  {
+    AnonymousNamespace an = AnonymousNamespace();
+    an.execute();
+    return 0;
+  }
   else if(program == "AutoIncrement")
   {
     AutoIncrement ai = AutoIncrement();
