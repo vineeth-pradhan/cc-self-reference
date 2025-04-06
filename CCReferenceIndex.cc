@@ -197,6 +197,12 @@ int main(int argc, char* argv[])
     ifn.execute();
     return 0;
   }
+  else if(program == "InlineNamespace")
+  {
+    InlineNamespace in = InlineNamespace();
+    in.execute();
+    return 0;
+  }
   else if(program == "InputBooleanValues")
   {
     InputBooleanValues ibv = InputBooleanValues();

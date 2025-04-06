@@ -52,6 +52,11 @@ class InlineFunction: public Ch7
   public: void execute();
 };
 
+class InlineNamespace: public Ch7
+{
+  public: void execute();
+};
+
 class G_IntVariablesExample: public Ch7
 {
   public: void execute();

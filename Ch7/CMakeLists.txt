@@ -12,6 +12,7 @@ add_library(Ch7 SHARED
   G_InlVariablesExample.cc
   goo.cc
   InlineFunction.cc
+  InlineNamespace.cc
   NamingCollision.cc
   ReplacingNamespaces.cc
   UsingAliases.cc
