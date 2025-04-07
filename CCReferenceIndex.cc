@@ -6,6 +6,7 @@
 #include "Ch5.h"
 #include "Ch6.h"
 #include "Ch7.h"
+#include "Ch8.h"
 
 int main(int argc, char* argv[])
 {
@@ -261,6 +262,12 @@ int main(int argc, char* argv[])
   {
     ShortCircuitEvaluation sce = ShortCircuitEvaluation();
     sce.execute();
+    return 0;
+  }
+  else if(program == "SimpleIf")
+  {
+    SimpleIf si = SimpleIf();
+    si.execute();
     return 0;
   }
   else if(program == "SizeOfInt")
