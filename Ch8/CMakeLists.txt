@@ -1,5 +1,6 @@
 add_library(Ch8 SHARED
   SimpleIf.cc
+  ConstExprIf.cc
 )
 
 target_include_directories(Ch8 INTERFACE

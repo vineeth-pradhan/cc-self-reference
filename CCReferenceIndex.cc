@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
   if(argc > 1)
     program = argv[1];
   else{
-    std::cerr << "Too fee arguments! Please input a valid program name as an argument to continue\n";
+    std::cerr << "Too few arguments! Please input a valid program name as an argument to continue\n";
     return 0;
   }
 
@@ -95,6 +95,12 @@ int main(int argc, char* argv[])
   {
     ConditionalCompilation cc = ConditionalCompilation();
     cc.execute();
+    return 0;
+  }
+  else if(program == "ConstExprIf")
+  {
+    ConstExprIf cei = ConstExprIf();
+    cei.execute();
     return 0;
   }
   else if(program == "DecimalToBinary")
