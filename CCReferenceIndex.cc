@@ -138,6 +138,12 @@ int main(int argc, char* argv[])
     eRGBValues.execute();
     return 0;
   }
+  else if(program == "FallThroughSwitch")
+  {
+    FallThroughSwitch fts = FallThroughSwitch();
+    fts.execute();
+    return 0;
+  }
   else if(program == "FixedWidthIntegers")
   {
     FixedWidthIntegers fwi = FixedWidthIntegers();
