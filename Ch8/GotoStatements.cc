@@ -1,9 +1,10 @@
 #include <iostream>
+#include <string_view>
 #include "Ch8.h"
 
-void GotoStatements::greetings(bool skip)
+void GotoStatements::greetings(std::string_view skip)
 {
-  if(skip)
+  if(skip == "yes")
     goto sayByeBye;
 
   std::cout << "Welcome to the world" << "\n";
@@ -11,7 +12,7 @@ void GotoStatements::greetings(bool skip)
     std::cout << "Adios!" << "\n";
 }
 
-void GotoStatements::execute()
+void GotoStatements::execute(std::string_view skip)
 {
-  greetings(true);
+  greetings(skip);
 }

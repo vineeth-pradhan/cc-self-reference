@@ -1,3 +1,4 @@
+#include <string_view>
 class Ch8 {};
 
 class ConstExprIf: public Ch8
@@ -12,8 +13,8 @@ class FallThroughSwitch: public Ch8
 
 class GotoStatements: public Ch8
 {
-  private: void greetings(bool);
-  public: void execute();
+  private: void greetings(std::string_view);
+  public: void execute(std::string_view);
 };
 
 class SimpleIf: public Ch8
