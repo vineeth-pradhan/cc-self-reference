@@ -176,9 +176,17 @@ int main(int argc, char* argv[])
   }
   else if(program == "GotoStatements")
   {
-    std::string_view skip = argv[2];
+    std::string_view skip;
     GotoStatements gs = GotoStatements();
-    gs.execute(skip);
+    if(argc > 2)
+    {
+      skip = argv[2];
+      gs.execute(skip);
+    }
+    else
+    {
+      gs.execute("no");
+    }
     return 0;
   }
   else if(program == "G_ExtVariablesExample")
