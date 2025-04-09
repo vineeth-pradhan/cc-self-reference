@@ -174,6 +174,12 @@ int main(int argc, char* argv[])
     gd.execute();
     return 0;
   }
+  else if(program == "GotoStatements")
+  {
+    GotoStatements gs = GotoStatements();
+    gs.execute();
+    return 0;
+  }
   else if(program == "G_ExtVariablesExample")
   {
     G_ExtVariablesExample gExtVar = G_ExtVariablesExample();
