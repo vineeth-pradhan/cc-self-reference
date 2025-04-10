@@ -1,6 +1,14 @@
 #include <string_view>
 class Ch8 {};
 
+class AtExit: public Ch8
+{
+  private: void atexit_handler_1();
+  private: void atexit_handler_2();
+
+  public: int execute();
+};
+
 class ConstExprIf: public Ch8
 {
   public: void execute();

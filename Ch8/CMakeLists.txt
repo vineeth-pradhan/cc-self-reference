@@ -1,4 +1,5 @@
 add_library(Ch8 SHARED
+  AtExit.cc
   ConstExprIf.cc
   FallThroughSwitch.cc
   GotoStatements.cc
