@@ -43,6 +43,12 @@ int main(int argc, char* argv[])
     asd.execute();
     return 0;
   }
+  else if(program == "AtExitFn")
+  {
+    AtExitFn aef = AtExitFn();
+    aef.execute();
+    return 0;
+  }
   else if(program == "BitMask")
   {
     BitMask bm = BitMask();

@@ -2,12 +2,12 @@
 #include <iostream>
 #include "Ch8.h"
 
-static void atexit_handler_1()
+void atexit_handler_1()
 {
-  std::cout << "Cleanup Bioweapons \n";
+  std::cout << "At exit #1\n";
 }
 
-int AtExit::execute()
+int AtExitFn::execute()
 {
   const int result = std::atexit(atexit_handler_1);
   if(result)
