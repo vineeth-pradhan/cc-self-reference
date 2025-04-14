@@ -3,6 +3,7 @@ add_library(Ch8 SHARED
   ConstExprIf.cc
   FallThroughSwitch.cc
   GotoStatements.cc
+  RandomNumberGenerator.cc
   SimpleIf.cc
 )
 

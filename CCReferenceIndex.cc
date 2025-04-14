@@ -267,6 +267,12 @@ int main(int argc, char* argv[])
     ns.execute();
     return 0;
   }
+  else if(program == "RandomNumberGenerator")
+  {
+    RandomNumberGenerator rng = RandomNumberGenerator();
+    rng.execute();
+    return 0;
+  }
   else if(program == "ReplacingNamespaces")
   {
     ReplacingNamespaces rn = ReplacingNamespaces();
