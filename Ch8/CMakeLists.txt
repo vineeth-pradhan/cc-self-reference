@@ -4,6 +4,7 @@ add_library(Ch8 SHARED
   FallThroughSwitch.cc
   GotoStatements.cc
   RandomNumberGenerator.cc
+  SeedPRNG.cc
   SimpleIf.cc
 )
 

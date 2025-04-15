@@ -291,110 +291,16 @@ int main(int argc, char* argv[])
     sod.execute();
     return 0;
   }
+  else if(program == "SeedPRNG")
+  {
+    SeedPRNG sp = SeedPRNG();
+    sp.execute();
+    return 0;
+  }
   else if(program == "SettingABit")
   {
     SettingABit sab = SettingABit();
     sab.execute();
     return 0;
-  }
-  else if(program == "ShortCircuitEvaluation")
-  {
-    ShortCircuitEvaluation sce = ShortCircuitEvaluation();
-    sce.execute();
-    return 0;
-  }
-  else if(program == "SimpleIf")
-  {
-    SimpleIf si = SimpleIf();
-    si.execute();
-    return 0;
-  }
-  else if(program == "SizeOfInt")
-  {
-    SizeOfInt si = SizeOfInt();
-    si.execute();
-    return 0;
-  }
-  else if(program == "SizeOfTypes")
-  {
-    SizeOfTypes sot = SizeOfTypes();
-    sot.execute();
-    return 0;
-  }
-  else if(program == "SizeT")
-  {
-    SizeT st = SizeT();
-    st.execute();
-    return 0;
-  }
-  else if(program == "StaticCasting")
-  {
-    StaticCasting sc = StaticCasting();
-    sc.execute();
-    return 0;
-  }
-  else if(program == "StringViewCornerCase")
-  {
-    StringViewCornerCase svcs = StringViewCornerCase();
-    svcs.execute();
-    return 0;
-  }
-  else if(program == "StringViewCornerCase2")
-  {
-    StringViewCornerCase2 svcs2 = StringViewCornerCase2();
-    svcs2.execute();
-    return 0;
-  }
-  else if(program == "StringViewCornerCase3")
-  {
-    StringViewCornerCase3 svcs3 = StringViewCornerCase3();
-    svcs3.execute();
-    return 0;
-  }
-  else if(program == "StringViewCornerCase4")
-  {
-    StringViewCornerCase4 svcs4 = StringViewCornerCase4();
-    svcs4.execute();
-    return 0;
-  }
-  else if(program == "StringViewExample")
-  {
-    StringViewExample sve = StringViewExample();
-    sve.execute();
-    return 0;
-  }
-  else if(program == "StringViewSubStr")
-  {
-    StringViewSubStr svs = StringViewSubStr();
-    svs.execute();
-    return 0;
-  }
-  else if(program == "UsingAliases")
-  {
-    UsingAliases ua = UsingAliases();
-    ua.execute();
-    return 0;
-  }
-  else if(program == "UsingDeclarations")
-  {
-    UsingDeclarations ud = UsingDeclarations();
-    ud.execute();
-    return 0;
-  }
-  else if(program == "UsingNSForConstants")
-  {
-    UsingNSForConstants unsfc = UsingNSForConstants();
-    unsfc.execute();
-    return 0;
-  }
-  else if(program == "VariableScope")
-  {
-    VariableScope vs = VariableScope();
-    vs.execute();
-    return 0;
-  }
-  else
-  {
-    std::cerr << "Invalid input argument, please input a valid program name as an input argument to run this program\n";
   }
 }
