@@ -24,8 +24,13 @@ class GotoStatements: public Ch8
 
 class RandomNumberGenerator: public Ch8
 {
-  private: unsigned int get();
-  public: void execute();
+  private:
+    unsigned int s_state;
+  public:
+    unsigned int get_s_state();
+    void set_s_state(unsigned int);
+    void set_s_state();
+    void execute();
 };
 
 class SeedPRNG: public Ch8
