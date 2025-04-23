@@ -249,6 +249,12 @@ int main(int argc, char* argv[])
     li.execute();
     return 0;
   }
+  else if(program == "MersenneTwister")
+  {
+    MersenneTwister mt = MersenneTwister();
+    mt.execute();
+    return 0;
+  }
   else if(program == "NamedConstants")
   {
     NamedConstants nc = NamedConstants();
