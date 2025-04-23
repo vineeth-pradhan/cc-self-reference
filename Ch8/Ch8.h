@@ -28,6 +28,7 @@ class RandomNumberGenerator: public Ch8
     unsigned int s_state;
   public:
     unsigned int get_s_state();
+    unsigned int algorithm();
     void set_s_state(unsigned int);
     void set_s_state();
     void execute();

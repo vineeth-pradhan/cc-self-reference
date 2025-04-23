@@ -20,13 +20,20 @@ unsigned int RandomNumberGenerator::get_s_state()
   return this -> s_state;
 }
 
+unsigned int RandomNumberGenerator::algorithm()
+{
+  set_s_state(8253729 * get_s_state() + 2396403);
+  return this -> get_s_state() % 32768;
+}
+
 void RandomNumberGenerator::execute()
 {
   for(int count {1}; count <= 100; ++count)
   {
-    unsigned int s_state = get_s_state();
-    // std::cout << get_s_state() << "\t";
+    std::cout << algorithm() << "\t";
     if(count % 10 == 0)
+    {
       std::cout << "\n";
+    }
   }
 }
