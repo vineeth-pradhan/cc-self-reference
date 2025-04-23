@@ -48,3 +48,8 @@ class SimpleIf: public Ch8
 {
   public: void execute();
 };
+
+class UniformIntDistribution: public Ch8
+{
+  public: void execute();
+};

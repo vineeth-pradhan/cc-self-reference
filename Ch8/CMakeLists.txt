@@ -7,6 +7,7 @@ add_library(Ch8 SHARED
   RandomNumberGenerator.cc
   SeedPRNG.cc
   SimpleIf.cc
+  UniformIntDistribution.cc
 )
 
 target_include_directories(Ch8 INTERFACE

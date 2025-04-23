@@ -309,4 +309,10 @@ int main(int argc, char* argv[])
     sab.execute();
     return 0;
   }
+  else if(program == "UniformIntDistribution")
+  {
+    UniformIntDistribution uid = UniformIntDistribution();
+    uid.execute();
+    return 0;
+  }
 }
