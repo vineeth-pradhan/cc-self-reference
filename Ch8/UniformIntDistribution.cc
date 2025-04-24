@@ -10,7 +10,7 @@ void UniformIntDistribution::execute()
   for(int count{1}; count <= 100; ++count)
   {
     std::cout << die6(mt) << "\t";
-    if(count % 5 == 0)
+    if(count % 10 == 0)
     {
       std::cout << "\n";
     }
