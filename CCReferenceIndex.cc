@@ -279,6 +279,12 @@ int main(int argc, char* argv[])
     rng.execute();
     return 0;
   }
+  else if(program == "RandomNumberGeneratorWithChrono")
+  {
+    RandomNumberGeneratorWithChrono rngwc = RandomNumberGeneratorWithChrono();
+    rngwc.execute();
+    return 0;
+  }
   else if(program == "ReplacingNamespaces")
   {
     ReplacingNamespaces rn = ReplacingNamespaces();

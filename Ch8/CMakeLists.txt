@@ -5,6 +5,7 @@ add_library(Ch8 SHARED
   GotoStatements.cc
   MersenneTwister.cc
   RandomNumberGenerator.cc
+  RandomNumberGeneratorWithChrono.cc
   SeedPRNG.cc
   SimpleIf.cc
   UniformIntDistribution.cc
