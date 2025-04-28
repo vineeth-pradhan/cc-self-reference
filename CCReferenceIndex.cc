@@ -285,6 +285,12 @@ int main(int argc, char* argv[])
     rngwc.execute();
     return 0;
   }
+  else if(program == "RandomNumberGeneratorWithRandomDevice")
+  {
+    RandomNumberGeneratorWithRandomDevice rngwc = RandomNumberGeneratorWithRandomDevice();
+    rngwc.execute();
+    return 0;
+  }
   else if(program == "ReplacingNamespaces")
   {
     ReplacingNamespaces rn = ReplacingNamespaces();

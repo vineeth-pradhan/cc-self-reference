@@ -6,6 +6,7 @@ add_library(Ch8 SHARED
   MersenneTwister.cc
   RandomNumberGenerator.cc
   RandomNumberGeneratorWithChrono.cc
+  RandomNumberGeneratorWithRandomDevice.cc
   SeedPRNG.cc
   SimpleIf.cc
   UniformIntDistribution.cc

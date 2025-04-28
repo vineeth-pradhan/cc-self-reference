@@ -44,6 +44,11 @@ class RandomNumberGeneratorWithChrono: public Ch8
   public: void execute();
 };
 
+class RandomNumberGeneratorWithRandomDevice: public Ch8
+{
+  public: void execute();
+};
+
 class SeedPRNG: public Ch8
 {
   public: void execute();
